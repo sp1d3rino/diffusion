@@ -8,8 +8,8 @@ pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float
 pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
 pipe = pipe.to("cuda")
 
-prompt = "foto di un cane che sta facendo la cacca per strada. Il cane deve essere di vetro"
+prompt = "foto di un haker in tuta nera che sta scrivendo del codice seduto all scrivania con 6 monitor davanti. Nella stanza la luce e' scarsa ma ci sono i led a illuminare tutto. il soggetto e' di spalle"
 image = pipe(prompt).images[0]
     
-image.save("image2.png")
+image.save("image4.png")
 
