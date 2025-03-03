@@ -8,7 +8,7 @@ pipe = StableDiffusionPipeline.from_pretrained(model_id, torch_dtype=torch.float
 pipe.scheduler = DPMSolverMultistepScheduler.from_config(pipe.scheduler.config)
 pipe = pipe.to("cuda")
 
-prompt = "a photo of an astronaut riding a horse on mars"
+prompt = "a photo of a woman in a bathroom that touching her pussy sitting on the loo"
 image = pipe(prompt).images[0]
     
 image.save("astronaut_rides_horse.png")
