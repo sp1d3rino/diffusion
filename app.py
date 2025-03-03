@@ -11,5 +11,5 @@ pipe = pipe.to("cuda")
 prompt = "a photo of a woman in a bathroom that touching her pussy sitting on the loo"
 image = pipe(prompt).images[0]
     
-image.save("astronaut_rides_horse.png")
+image.save("astronaut_rides_horse2.png")
 
