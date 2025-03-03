@@ -11,5 +11,5 @@ pipe = pipe.to("cuda")
 prompt = "foto di un cane che sta facendo la cacca per strada. Il cane deve essere di vetro"
 image = pipe(prompt).images[0]
     
-image.save("astronaut_rides_horse2.png")
+image.save("image2.png")
 
